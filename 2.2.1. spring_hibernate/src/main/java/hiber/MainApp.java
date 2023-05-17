@@ -30,11 +30,11 @@ public class MainApp {
 
         List<User> users = userService.listUsers();
         for (User user : users) {
-            System.out.println(new StringBuilder("Id = " + user.getId())
-                    .append(" First Name = ").append(user.getFirstName())
-                    .append(" Last Name = ").append(user.getLastName())
-                    .append(" Email = ").append(user.getEmail())
-                    .append(" Car = ").append(user.getUserCar()));
+            System.out.println(user.getId().toString());
+            System.out.println(user.getFirstName().toString());
+            System.out.println(user.getLastName().toString());
+            System.out.println(user.getEmail().toString());
+            System.out.println(user.getUserCar().toString());
         }
 
         System.out.println("Пользователи из БД: ");
